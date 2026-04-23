@@ -1,0 +1,16 @@
+Lessons Learned Capture Skill
+Copyright 2026 - All Rights Reserved
+
+This skill and all associated resources are proprietary and confidential.
+
+Use is permitted for:
+- Creating and maintaining LESSONS_LEARNED.md in your projects
+- Integrating standards documentation into agent workflows
+- Personal and organizational project management
+
+Restrictions:
+- Do not redistribute without permission
+- Do not use in competing products
+- Do not reverse-engineer for commercial gain
+
+For licensing inquiries, contact the maintainers.

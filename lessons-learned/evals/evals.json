@@ -1,0 +1,62 @@
+{
+  "skill_name": "lessons-learned",
+  "description": "Capture and document standards from conversation feedback into LESSONS_LEARNED.md",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "capture-prerequisites-standard",
+      "prompt": "User statement: 'Ok, make sure the playwright/chrome is installed and works. Test it on a sample website of your choice, you need to record on the lessons learned that the user expects that the pre-requisites are installed, and confirm by testing them before saying the task is ready.' Now capture this into LESSONS_LEARNED.md under the Prerequisites & Validation section.",
+      "expected_output": "A LESSONS_LEARNED.md file with a new section under Prerequisites & Validation containing: Standard (verify prerequisites before claiming readiness), Context (user expects Playwright/Chrome installed and working), Action (test prerequisites on sample website first), Priority (HIGH), Enforced (Manual verification required). File should be machine-readable YAML + Markdown.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "eval_name": "capture-process-correction",
+      "prompt": "User says during a task: 'Wait, before you create the file, check if there's already one. Don't overwrite existing work.' Capture this correction as a new standard in the Process Standards section of LESSONS_LEARNED.md.",
+      "expected_output": "Added to Process Standards: 'File Safety' section with Standard (check if file exists before creating/overwriting), Context (prevent loss of existing work), Action (search for file first, ask before overwriting), Priority (HIGH). Timestamp updated in YAML header.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "eval_name": "continuous-update-without-loss",
+      "prompt": "Start with a LESSONS_LEARNED.md that has 3 existing standards. Now add 2 new standards from conversation feedback. Verify that: 1) All original standards are preserved, 2) New standards are added with context, 3) Version number incremented, 4) Timestamp updated. Show the result.",
+      "expected_output": "LESSONS_LEARNED.md with all 5 standards visible, original ones unchanged, new ones formatted consistently. YAML version incremented (e.g., 1.0 → 1.1). last_updated timestamp reflects current time. No standards deleted or modified unless explicitly requested.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "eval_name": "parse-and-enforce-high-priority",
+      "prompt": "Given a LESSONS_LEARNED.md with 5 standards (2 marked HIGH, 3 MEDIUM), write a summary showing: 1) How a coding agent would discover HIGH-priority standards, 2) What actions it must perform before proceeding, 3) How it reports compliance. Include the specific standards extracted.",
+      "expected_output": "Summary showing parsed YAML metadata, identified 2 HIGH-priority standards with their Actions extracted, compliance checklist agent would follow, and example report output like 'Following project standards: ✓ Checked prerequisite X, ✓ Tested Y...'",
+      "files": []
+    },
+    {
+      "id": 5,
+      "eval_name": "agent-config-integration",
+      "prompt": "Design a minimal project config (.copilot-config.json or similar) that: 1) Points to LESSONS_LEARNED.md, 2) Enables auto-loading, 3) Specifies categories, 4) Includes agent instructions for before/during/after task. Show how an agent would use this config to enforce standards automatically.",
+      "expected_output": "JSON/YAML config file with lessons_learned section, auto_load enabled, categories list, pre_task/during_task/post_task agent instructions. Example showing agent flow: (startup) load config → parse LESSONS_LEARNED.md → report relevant standards → apply actions before proceeding.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "eval_name": "markdown-machine-hybrid-readability",
+      "prompt": "Create a section of LESSONS_LEARNED.md (e.g., 'Code Review Standards') that is equally readable by: 1) A human scanning the file, 2) A YAML/regex parser extracting standards, 3) A semantic AI parser understanding context. Show that parsing works without special markup or conventions.",
+      "expected_output": "Section with standard structure (###title, **Standard**, **Context**, **Action**, **Priority**, **Enforced**). Demonstrate successful parsing via: human-readable output, YAML-valid extraction, and semantic extraction of intent. All three parsing methods return the same standard details.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "eval_name": "capture-emphasis-and-repetition",
+      "prompt": "User emphasizes the same standard twice in conversation (e.g., 'Never skip testing' early, then later 'Remember, no task is done without testing'). Capture this into LESSONS_LEARNED.md handling repetition: 1) Detect it's the same standard, 2) Don't duplicate it, 3) Merge context/actions if they differ, 4) Update relevant parts only. Show result.",
+      "expected_output": "LESSONS_LEARNED.md with single consolidated 'Validation Before Completion' standard, not duplicated. If second mention added context, show merged version. Timestamp updated only once. Explanation of how repetition was detected and consolidated.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "eval_name": "multi-category-standard",
+      "prompt": "Capture a standard that applies across multiple categories (e.g., 'Test everything' applies to both 'process' and 'quality-gates'). Show how to: 1) Record it without duplication, 2) Cross-reference it, 3) Ensure agents see it in both categories when parsing.",
+      "expected_output": "Standard recorded in primary category with clear reference/link to related categories. Example: '### Testing Standard' in quality-gates section with note '(See also: Process Standards > Validation Before Completion)'. Agent parser can find standard across category boundaries.",
+      "files": []
+    }
+  ]
+}

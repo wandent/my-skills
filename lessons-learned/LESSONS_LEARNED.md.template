@@ -1,0 +1,148 @@
+---
+version: "1.0"
+last_updated: "2026-04-22T14:30:00Z"
+categories:
+  - prerequisites
+  - process
+  - quality-gates
+  - coding-standards
+  - architecture
+  - security
+  - testing
+  - data-handling
+  - deployment
+  - communication
+  - ux-design
+  - debugging
+---
+
+# Lessons Learned
+
+> This file is auto-maintained by the `lessons-learned` skill.
+> It is both human-readable and machine-parseable by coding agents (GitHub Copilot, CLI, CI/CD).
+> Add lessons by describing standards during your conversation — the agent will capture them here.
+
+---
+
+## Prerequisites & Validation
+
+### Tool Installation Requirements
+- **Standard**: Verify all prerequisites are installed and working before claiming task readiness
+- **Context**: User expects pre-requisites to be installed and confirmed before proceeding
+- **Action**: 1) List required tools, 2) Verify each is installed, 3) Test on sample input, 4) Only then confirm readiness
+- **Priority**: HIGH
+- **Enforced**: Manual verification required
+
+---
+
+## Process Standards
+
+### Validation Before Completion
+- **Standard**: Never mark a task complete without testing it
+- **Context**: Quality assurance is non-negotiable; task readiness requires verification
+- **Action**: Run all verifications before final sign-off; test on sample inputs/outputs
+- **Priority**: HIGH
+
+### File Safety
+- **Standard**: Always check if a file exists before creating or overwriting
+- **Context**: Prevent accidental loss of existing work
+- **Action**: Before creating a file, search for it first; if it exists, ask before overwriting
+- **Priority**: HIGH
+- **Enforced**: Manual check required
+
+---
+
+## Quality Gates
+
+### Pre-Task Checklist
+Before marking any task as "ready to proceed":
+1. ✓ All prerequisites installed and tested
+2. ✓ No existing files overwritten without confirmation
+3. ✓ Task tested on sample input
+4. ✓ Output reviewed before sign-off
+
+---
+
+## Coding Standards
+
+(Standards added here as they emerge from conversation)
+
+---
+
+## Architecture
+
+(Design decisions and structural rules added here as they emerge)
+
+---
+
+## Security
+
+(Security constraints and access rules added here as they emerge)
+
+---
+
+## Testing
+
+(Testing requirements and coverage expectations added here as they emerge)
+
+---
+
+## Data Handling
+
+(Schema conventions and data transformation rules added here as they emerge)
+
+---
+
+## Deployment
+
+(Release process rules and environment constraints added here as they emerge)
+
+---
+
+## Communication
+
+(Output style, format, and tone preferences added here as they emerge)
+
+---
+
+## UX Design
+
+(UI patterns and user experience rules added here as they emerge)
+
+---
+
+## Debugging
+
+(Diagnostic approaches and tooling preferences added here as they emerge)
+
+---
+
+## How Agents Should Use This File
+
+1. **Read on startup** — Load this file when beginning work on the project
+2. **Check relevant sections** — Find sections matching the current task type
+3. **Follow listed actions** — Apply each standard before proceeding
+4. **Report compliance** — Indicate in work summary which standards were checked
+5. **Flag violations** — If unable to follow a standard, explain why and propose alternative
+
+### Machine-Readable Parsing
+
+YAML categories in front matter define which sections exist. Each standard follows:
+
+```markdown
+### Section Title
+- **Standard**: (What rule to follow)
+- **Context**: (Why it matters)
+- **Action**: (How to implement it)
+- **Priority**: (HIGH/MEDIUM/LOW)
+- **Enforced**: (Type: Manual/Automated/Recommended)
+```
+
+---
+
+## Change History
+
+| Date | Change | Version |
+|------|--------|---------|
+| 2026-04-22 | Initial template created | 1.0 |
+
