@@ -1,0 +1,27 @@
+{
+  "eval_id": 1,
+  "eval_name": "obviously-ai-marketing",
+  "prompt": "Analyze this text to determine if it was AI-generated: [marketing copy with formal tone, generic phrasing, corporate jargon, consistent perfection]",
+  "assertions": [
+    {
+      "id": "likelihood-correct",
+      "name": "Likelihood assessment is High (AI-generated)",
+      "description": "The analysis should conclude that this text has HIGH likelihood of being AI-generated"
+    },
+    {
+      "id": "signals-identified",
+      "name": "Key AI signals identified",
+      "description": "Should identify 3+ specific signals: formal tone, generic phrasing, lack of personal voice, repeated corporate jargon, consistent perfect grammar, abstract language"
+    },
+    {
+      "id": "confidence-stated",
+      "name": "Confidence level is Moderate to High",
+      "description": "Should express moderate to high confidence (60%+) since marketing copy is a clear signal of AI"
+    },
+    {
+      "id": "reasoning-structured",
+      "name": "Analysis covers all 6 categories with observations",
+      "description": "Should address Style & Tone, Vocabulary, Repetition, Grammar, Expression, and Overall Impression"
+    }
+  ]
+}

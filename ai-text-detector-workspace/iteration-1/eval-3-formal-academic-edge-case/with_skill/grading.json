@@ -1,0 +1,26 @@
+{
+  "eval_id": 3,
+  "eval_name": "formal-academic-edge-case",
+  "expectations": [
+    {
+      "text": "Likelihood assessment acknowledges ambiguity (Medium or conditional)",
+      "passed": true,
+      "evidence": "Analysis concludes 'Likelihood: Medium | Confidence: Moderate (60%)'. Correctly identifies ambiguity instead of false confidence."
+    },
+    {
+      "text": "Context-dependent signals recognized",
+      "passed": true,
+      "evidence": "Explicitly discusses how formal academic writing legitimately has these characteristics, and notes that expert scholars naturally produce consistent text. Context is central to assessment."
+    },
+    {
+      "text": "Confidence level is Low to Moderate (35-60%)",
+      "passed": true,
+      "evidence": "States 'Moderate (60%)' confidence level. Appropriate for ambiguous edge case."
+    },
+    {
+      "text": "Caveats section addresses edge case nature",
+      "passed": true,
+      "evidence": "Extensive caveats section (5 paragraphs) explicitly addresses academic context, scholarly accuracy, edited writing, and AI sophistication. Final assessment notes ambiguity clearly."
+    }
+  ]
+}

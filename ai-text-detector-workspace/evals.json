@@ -1,0 +1,26 @@
+{
+  "skill_name": "ai-text-detector",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "obviously-ai-marketing",
+      "prompt": "Analyze this text to determine if it was AI-generated:\n\n\"Elevate your productivity to unprecedented levels with our innovative cloud-based solution. Designed to streamline workflows and maximize efficiency, our platform seamlessly integrates with existing systems while maintaining robust security protocols. By leveraging cutting-edge technology, organizations can achieve remarkable ROI improvements and competitive advantages in today's dynamic marketplace. Our solution empowers teams to work smarter, not harder, delivering transformative results across all departments.\"",
+      "expected_output": "Should identify HIGH likelihood of AI generation with specific signals about formal tone, generic phrasing, repeated corporate jargon, consistent perfect structure, and lack of specificity.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "eval_name": "obviously-human-anecdote",
+      "prompt": "Analyze this text to determine if it was AI-generated:\n\n\"So I'm sitting in the coffee shop yesterday, right? And I accidentally knock over my latte while reaching for my phone. Apparently I'd been holding it for like forty-five minutes without noticing—it was *cold*. Anyway, the barista laughs and goes, 'that's the third one today,' and suddenly I'm wondering if I'm just catastrophically clumsy or if everyone does this. Spoiler: I'm definitely more clumsy than most people. But honestly? Still worth it for the free 'oops' cookie they gave me.\"",
+      "expected_output": "Should identify LOW likelihood of AI generation with specific signals about personal voice, natural anecdotes, specific details, varied sentence structure, emotional tone, and colloquialisms.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "eval_name": "formal-academic-edge-case",
+      "prompt": "Analyze this text to determine if it was AI-generated:\n\n\"The relationship between linguistic markers and artificial text generation has been the subject of considerable scholarly attention. Research indicates that computational language models frequently exhibit distinctive patterns in their output, including limited lexical diversity and predictable syntactic structures. However, human authors in technical and academic domains often produce writing with similar characteristics, raising questions about the reliability of purely linguistic analysis. The presence of consistent grammatical correctness does not necessarily indicate machine authorship, particularly in texts produced by educated writers or subject matter experts. Furthermore, the rapid advancement of generative AI models has resulted in output that increasingly approximates naturally occurring human language patterns.\"",
+      "expected_output": "Should identify MEDIUM likelihood with acknowledgment that formal academic writing legitimately has these characteristics, and that confidence is moderate due to context ambiguity.",
+      "files": []
+    }
+  ]
+}

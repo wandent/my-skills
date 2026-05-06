@@ -1,0 +1,20 @@
+{
+  "skill_name": "search-session-history",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Search my chat sessions for markdown documents about 'Azure' created in the last month. I want to find all the Azure-related work I've done recently.",
+      "expected_output": "A markdown summary file listing Azure-related files from the past month, with excerpts showing context and conversation summaries about what I was working on."
+    },
+    {
+      "id": 2,
+      "prompt": "Find all JSON configuration files I created or modified that mention 'Terraform' or 'infrastructure'. Search my entire session history.",
+      "expected_output": "A markdown summary showing JSON files containing Terraform/infrastructure keywords, with relevance scores and file modification dates sorted newest first."
+    },
+    {
+      "id": 3,
+      "prompt": "Look through my session history for markdown or text files between May 1 and May 10 that mention 'Fabric' or 'PowerBI'. Include conversation context for each result.",
+      "expected_output": "A markdown summary filtered to May 1-10 date range, showing Fabric/PowerBI references with conversation summaries explaining what projects these were part of."
+    }
+  ]
+}

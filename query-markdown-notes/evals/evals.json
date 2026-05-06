@@ -1,0 +1,35 @@
+{
+  "skill_name": "query-markdown-notes",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Search my knowledge base for notes about 'B3' and tell me what projects mention this company",
+      "expected_output": "Find all markdown files mentioning B3, particularly the DataLake Migration project notes",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "What information do I have about AWS in my project notes? Filter to the B3 project specifically",
+      "expected_output": "Return AWS-related content from B3 DataLake Migration project files",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Show me everything in my Projects folder and then create a summary of Analog Devices notes",
+      "expected_output": "List Projects folder structure, then generate summary note about Analog Devices with key findings",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Create a comprehensive summary of all my notes about 'authentication' and 'GenAI'",
+      "expected_output": "Search for both terms, aggregate findings, save summary markdown file to current directory",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "What's stored in my Archive folder? List the structure",
+      "expected_output": "Display folder structure with file counts and paths relative to knowledge base",
+      "files": []
+    }
+  ]
+}

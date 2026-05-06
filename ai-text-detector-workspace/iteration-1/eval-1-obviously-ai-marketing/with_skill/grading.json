@@ -1,0 +1,26 @@
+{
+  "eval_id": 1,
+  "eval_name": "obviously-ai-marketing",
+  "expectations": [
+    {
+      "text": "Likelihood assessment is High (AI-generated)",
+      "passed": true,
+      "evidence": "Analysis concludes 'Likelihood of AI Generation: High' with 80%+ confidence. Correct assessment."
+    },
+    {
+      "text": "Key AI signals identified (3+ specific signals)",
+      "passed": true,
+      "evidence": "Identified 7 key signals: corporate buzzwords, perfect grammar, lack of personal voice, repeated patterns, generic phrasing, impersonal tone, template structure. Exceeds requirement."
+    },
+    {
+      "text": "Confidence level is Moderate to High (60%+)",
+      "passed": true,
+      "evidence": "States 'High (80%+)' confidence level explicitly. Meets and exceeds requirement."
+    },
+    {
+      "text": "Analysis covers all 6 categories with observations",
+      "passed": true,
+      "evidence": "All 6 categories analyzed: Style & Tone, Vocabulary & Diversity, Repetition & Patterns, Grammar & Structure, Expression & Naturalness, Overall Impression. Each with observations and AI indicator."
+    }
+  ]
+}

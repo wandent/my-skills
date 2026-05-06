@@ -1,0 +1,27 @@
+{
+  "eval_id": 3,
+  "eval_name": "formal-academic-edge-case",
+  "prompt": "Analyze this text to determine if it was AI-generated: [formal academic text discussing AI detection, with mixed signals and acknowledged ambiguity]",
+  "assertions": [
+    {
+      "id": "likelihood-nuanced",
+      "name": "Likelihood assessment acknowledges ambiguity (Medium or conditional)",
+      "description": "The analysis should recognize that this text is ambiguous and could be either human or AI. Should NOT claim high confidence in either direction"
+    },
+    {
+      "id": "context-acknowledged",
+      "name": "Context-dependent signals recognized",
+      "description": "Should acknowledge that formal academic writing legitimately has formal tone, consistent grammar, and technical vocabulary regardless of authorship"
+    },
+    {
+      "id": "confidence-low",
+      "name": "Confidence level is Low to Moderate",
+      "description": "Should express low to moderate confidence (35-60%) since the signals are inconclusive in academic context"
+    },
+    {
+      "id": "caveats-discussed",
+      "name": "Caveats section addresses edge case nature",
+      "description": "Should explicitly mention that formal/technical writing creates ambiguity and that this text could be either human expertise or sophisticated AI"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "eval_id": 2,
+  "eval_name": "obviously-human-anecdote",
+  "prompt": "Analyze this text to determine if it was AI-generated: [personal anecdote with natural voice, colloquialisms, specific details, varied structure, emotion]",
+  "assertions": [
+    {
+      "id": "likelihood-correct",
+      "name": "Likelihood assessment is Low (human-written)",
+      "description": "The analysis should conclude that this text has LOW likelihood of being AI-generated"
+    },
+    {
+      "id": "signals-identified",
+      "name": "Key human signals identified",
+      "description": "Should identify 3+ specific signals: personal voice, anecdotal/specific details, conversational tone, varied sentence structure, emotional expression, colloquialisms/informal speech"
+    },
+    {
+      "id": "confidence-stated",
+      "name": "Confidence level is Moderate to High",
+      "description": "Should express moderate to high confidence (60%+) since personal anecdotes are strong human indicators"
+    },
+    {
+      "id": "reasoning-structured",
+      "name": "Analysis covers all 6 categories with observations",
+      "description": "Should address Style & Tone, Vocabulary, Repetition, Grammar, Expression, and Overall Impression"
+    }
+  ]
+}
