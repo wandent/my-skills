@@ -1,0 +1,23 @@
+{
+  "skill_name": "document-trace-footer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a one-page executive analysis of customer churn trends from Q1 to Q2.",
+      "expected_output": "An executive-style churn analysis that automatically includes a bottom 'Method Summary' section with instructions applied, high-level reasoning approach, rules/constraints, parameters/assumptions, and exclusions.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Draft a technical recommendation comparing PostgreSQL and MySQL for a new SaaS product with 500k monthly active users. Keep the recommendation focused.",
+      "expected_output": "A clear database recommendation plus an automatically appended concise, structured footer documenting decision criteria, constraints, reasoning approach, and assumptions without exposing internal chain-of-thought.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Write a risk analysis for migrating a legacy app to Azure Container Apps.",
+      "expected_output": "A migration risk analysis that automatically ends with a truthful method summary footer describing applied instructions, reasoning method, constraints, and key parameters used.",
+      "files": []
+    }
+  ]
+}
